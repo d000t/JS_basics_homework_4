@@ -34,7 +34,7 @@ function check_board(board, rows, cols){
     let have_empty_slots = false;
 
     for(let i = 1; i <= board.length; i++){
-        if (!have_empty_slots){
+        if (!have_empty_slots&&board[i-1][index]==0){
             have_empty_slots = true;
         }
         board_column.push(board[i - 1][index]);
