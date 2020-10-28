@@ -70,10 +70,11 @@ function check_board(board, rows, cols){
         }
     }
     index = 0;
-    if ((board[0][0]==board[1][1]==board[2][2])||(board[2][0]==board[1][1]==board[2][2])){
-        return board[1][1];
+    if (board[1][1]==1||board[1][1]==2) {
+        if ((board[0][0] == board[1][1] == board[2][2]) || (board[2][0] == board[1][1] == board[2][2])) {
+            return board[1][1];
+        }
     }
-
     /*
     for(let i=0;i<board.length;i++) {
         for(let j =i%2; j<board[i].length; j=j+2) {
