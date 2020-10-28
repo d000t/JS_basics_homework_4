@@ -1,5 +1,5 @@
 function sort_string_by_nums(str){
-    if(str == undefined||str.length==0){
+    if(str == undefined||str.length == 0){
     return '';
     }
     let arr = str.split(' ');
