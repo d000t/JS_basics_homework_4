@@ -17,6 +17,7 @@ function sort_string_by_nums(str){
     return arr.join(' ');
 }
 function task1(){
+    //let str = '4of Fo1r pe6ople g3ood th5e the2';
     let str = prompt('type a sentence');
     alert(str);
     alert(sort_string_by_nums(str));
