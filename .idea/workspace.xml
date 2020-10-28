@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="affc30fc-efa7-40c9-b75a-03f09e4c4fdd" name="Default Changelist" comment="" />
+    <list default="true" id="affc30fc-efa7-40c9-b75a-03f09e4c4fdd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jKmopVJqDdwNSZQLco5Yj4DQPw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,6 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -52,7 +60,7 @@
       <workItem from="1603728049338" duration="1122000" />
       <workItem from="1603729195196" duration="86000" />
       <workItem from="1603802206854" duration="19490000" />
-      <workItem from="1603880470662" duration="12248000" />
+      <workItem from="1603880470662" duration="12635000" />
     </task>
     <servers />
   </component>
@@ -64,6 +72,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1603833729065" />
+    <state x="487" y="239" key="Github.ShareDialog" timestamp="1603893645988">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="487" y="239" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1603893645988" />
+    <state x="421" y="46" key="Github.UntrackedFilesDialog" timestamp="1603893654526">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="46" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1603893654526" />
     <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1603826608357">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

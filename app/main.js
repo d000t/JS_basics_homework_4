@@ -1,18 +1,18 @@
 function sort_string_by_nums(str){
-    if(str==undefined||str.length==0){
-
+    if(str == undefined||str.length==0){
+    return '';
     }
     let arr = str.split(' ');
-    let box=0;
+    let box = 0;
     let index;
-    let regex=/\d/;
+    let regex = /\d/;
     for (let word of arr) {
         do{
             index = word.match(regex)[0]-1;
-            box=arr[index];
-            arr[index]=word;
-            word=box;
-        }while((word.match(regex)[0]-1)!=arr.indexOf(word))
+            box = arr[index];
+            arr[index] = word;
+            word = box;
+        }while((word.match(regex)[0] -1) != arr.indexOf(word))
     }
     return arr.join(' ');
 }
@@ -23,40 +23,40 @@ function task1(){
     alert(str);
 }
 function getRndNumber(min, max){
-    min=Math.floor(min);
-    max=Math.floor(max);
-    return Math.floor(Math.random() * (max-min + 1) ) + min;
+    min = Math.floor(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 function check_board(board, rows, cols){
     let board_column=[];
     let board_row=[];
     let board_diagonally=[];
-    let index=0;
-    let have_empty_slots=false;
+    let index = 0;
+    let have_empty_slots = false;
 
     for(let i = 1; i <= board.length; i++){
         if (!have_empty_slots){
-            have_empty_slots=true;
+            have_empty_slots = true;
         }
-        board_column.push(board[i-1][index]);
-        if (i/rows==1){
-                if (board_column.length==rows&&board_column.every(num_value => {
-                    if (num_value == board_column[0] &&(num_value==1||num_value==2)){
+        board_column.push(board[i - 1][index]);
+        if (i/rows == 1){
+                if (board_column.length==rows && board_column.every(num_value => {
+                    if (num_value == board_column[0] &&(num_value == 1 || num_value == 2)){
                         return true;
                     }
                 })){
                     return board_column[0];
                 }
-            board_column.splice(0,rows);
+            board_column.splice(0, rows);
             index++;
-            if (i==3&&index==3){break;}
+            if (i == 3&&index == 3){break;}
             i=0;
         }
     }
     index=0;
     for(let j = 1; j <= board.length; j++){
-        board_row.push(board[index][j-1]);
-        if ((j/cols)==1){
+        board_row.push(board[index][j - 1]);
+        if ((j / cols) == 1){
             if ((board_row.length) == cols && board_row.every(num_value => {
                 if (board_row[0] == num_value && (num_value == 1 || num_value == 2)){
                     return true;
@@ -70,7 +70,7 @@ function check_board(board, rows, cols){
             j = 0;
         }
     }
-    index=0;
+    index = 0;
     /*
     for(let i=0;i<board.length;i++) {
         for(let j =i%2; j<board[i].length; j=j+2) {
@@ -110,19 +110,19 @@ function task2(){
     alert(JSON.stringify(game_status));
     switch (game_status){
         case -1:{
-            game_status='The board is not yet finished (there are empty spots)';
+            game_status = 'The board is not yet finished (there are empty spots)';
             break;
         }
         case 0:{
-            game_status="It's a draw";
+            game_status = "It's a draw";
             break;
         }
         case 1:{
-            game_status='"X" won';
+            game_status = '"X" won';
             break;
         }
         case 2:{
-            game_status='"O" won';
+            game_status = '"O" won';
             break;
         }
     }
