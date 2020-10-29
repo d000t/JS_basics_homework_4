@@ -156,15 +156,12 @@ function find_a_chair() {
 
         if (other_chairs_free > 0) {
             room[1] = other_room_chairs_amount - other_chairs_free;
-            switch (needed_chairs_amount > other_chairs_free) {
-                case true: {
+            if(needed_chairs_amount > other_chairs_free){
                     my_chairs_amount += other_chairs_free;
                     founded_chairs.push(other_chairs_free);
                     needed_chairs_amount-=other_chairs_free;
                     other_chairs_free = 0;
-                    break;
-                }
-                case false: {
+                }else{
                     my_chairs_amount = people_on_meeting_num;
                     founded_chairs.push(needed_chairs_amount);
                     other_chairs_free -= needed_chairs_amount;
@@ -172,7 +169,6 @@ function find_a_chair() {
                     alert(JSON.stringify(founded_chairs));
                     return 'Game on';
                 }
-            }
             room[1] = other_room_chairs_amount + other_chairs_free;
         }
         else{
