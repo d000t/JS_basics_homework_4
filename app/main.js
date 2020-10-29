@@ -82,22 +82,6 @@ function check_board(board, rows, cols){
         }
     }*/
 
-
-    /*for (let k = 0; k <= board.length; k++) {
-        for (let n = 0; n < board[k].length; n++) {
-            //происходит ошибка
-            //поставил -1 в двух условиях
-            if (k==n||board[k][n]==board[board.length-1][n]||board[k][n]==board[k][board[k].length-1]){
-            board_diagonally.push(board[k][n]);}
-
-        }
-    }
-    if (board_diagonally.every(num_value => {
-        if (num_value==1||num_value==2){
-            return true;
-        }})){
-        return board_diagonally[0];
-    }*/
     return have_empty_slots == true ? -1 : 0;
 }
 
